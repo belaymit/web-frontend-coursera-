@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Web Frontend using bootstrap</title>
+
+  </head>
+    <body>
+    <div class="container-fluid header-container p-2">
+        <div class="container p-3 mt-3 text-white">
+            <div class="row">
+                <div class="col-sm-6">
+                  <h1>Ristorante con Fusion</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, perferendis officiis? Provident ullam laudantium itaque unde voluptatum, saepe rerum veritatis!</p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="restorate-confusion-logo">
+                        <img src="./Images/logo.png" alt="restorate-confusion-logo">
+                    </div>
+                </div>
+                <div class="col-sm-4 d-flex align-items-center justify-content-center reserve-btn-container">
+                  <a href="#reserve"><button type="button" class="btn btn-lg reserve-btn">Reserve Table</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container-fluid">
+      <section class="container-fluid">
+        <div class="container">
+          <div class="row mt-3 about-us">
+            <h2>About Us</h2>
+          </div>
+          <div class="row mt-4 mb-5 our-history">
+            <div class="col-md-6">
+              <h2>Our History</h2>
+              <p class="ourhistory-description">Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+              <p class="ourhistory-description">The restaurant traces its humble beginnings to The Frying Pan, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <h2>Corporate Leadership</h2>
+            <h3>Peter Pan <span class="small-text"> Chief Epicurious Officer</span></h3>
+            <p class="description">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous 
+              journey to the shores of America with the intention of giving their children the best future.
+               His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+          </div>
+          <div class="row">
+            <h3>Dhanasekaran Witherspoon <span class="small-text"> Chief Food Officer</span></h3>
+            <p class="description">Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!</p>
+          </div>
+          <div class="row">
+            <h3>Agumbe Tang <span class="small-text">Chief Taste Officer</span></h3>
+            <p class="description">Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick.</p>
+          </div>
+          <div class="row">
+            <h3>Alberto Somayya  <span class="small-text"> Executive Chef</span></h3>
+            <p class="description">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+          <div class="row row-food-container">
+          <div class="col-md-10">
+            <div class="row uthappizza-row">
+              <div class="col-md-2 uhta-container">
+                <img  class="img-thumbnail" src="./Images/uthappizza.png" alt="uthappizza">
+              </div> 
+              <div class="col-sm-10 uthappizza-inner-column">
+               <div class="title-button">
+                <h1 class="title">Uthappizza</h1>
+                <button type="button" class="hot">HOT</button>
+                <button type="button" class="price">$4.99</button>
+               </div>
+                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <h3 class="h3-title">Our Lipsmacking Culinary Creations</h3>
+          </div>
+          </div>
+          <div class="row row-food-container mt-3">
+            <div class="col-sm-2">
+              <h3 class="h3-row-food-container">This Month's Promotions</h3>
+            </div>
+            <div class="col-sm-10">
+              <div class="row row-inner-food-container">
+                <div class="col-sm-10 buffet-inner-column">
+                  <div class="title-button">
+                    <h1 class="title">Weekend Grand Buffet</h1>
+                    <button type="button" class="hot">NEW</button>
+                  </div>
+                  <p>Featuring mouthwatering combinations 
+                    with a choice of five different salads, 
+                    six enticing appetizers, six main entrees
+                     and five choicest desserts. Free flowing bubbly
+                      and soft drinks. All for just $19.99 per person</p>
+                </div>
+                <div class="col-sm-2 buffet-img-container">
+                  <img  class="img-thumbnail" src="./Images/buffet.png" alt="uthappizza">
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="row row-food-container mt-3">
+            <div class="col-sm-10">
+              <div class="row alberto-somayya-container">
+                <div class="col-sm-2 alberto-somayya-inner-container">
+                  <img  class="img-thumbnail" src="./Images/alberto.png" alt="uthappizza">
+                </div> 
+                <div class="col-sm-10 buffet-inner-column">
+                    <h1 class="title">Alberto Somayya</h1>
+                    <h3>Executive Chef</h3>
+                  <p>FAward winning three-star Michelin chef with wide International 
+                    experience having worked closely with whos-who in the culinary world,
+                     he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <h3 class="alberto-somayya-title">Meet our Culinary Specialists</h3>
+            </div>
+          </div>
+      </section>
+      <section class="container reserve-table-section d-flex align-items-center justify-content-center" id="reserve">
+       <div class="row mt-5">
+        <div class="col">
+          <div class="card">
+            <div class="card-header custom-card-header">
+             Reserve Table
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Number of Guests</h4>
+                </div>
+                <div class="col-sm-8">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">6</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-sm-4">
+                  <h3>Date and Time</h3>
+                </div>
+                <div class="col-sm-8">
+                  <form class="row g-3">
+                    <div class="col-auto">
+                      <label for="date" class="visually-hidden">Password</label>
+                      <input type="date" class="form-control" id="date" placeholder="Date">
+                    </div>
+                    <div class="col-auto">
+                      <label for="time" class="visually-hidden">Password</label>
+                      <input type="text" class="form-control" id="text" placeholder="Time">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mt-3 mb-3 reserv-btn">Reserve</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
+    </main>
+    <footer class="container-fluid text-white mt-4 footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 mt-3 footer-column">
+            <h5 class="footer-text-header">Links</h5>
+            <ul class="footer-list-items list-group">
+              <li class="list-item"><a href="#">Home</a></li>
+              <li class="list-item"><a href="#">About</a></li>
+              <li class="list-item"><a href="#">Menu</a></li>
+              <li class="list-item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mt-3 footer-column">
+            <h5 class="footer-text-header">Our Addresses</h5>
+            <ul class="footer-list-items list-group">
+              <li class="list-item">121, Clear Water Bay Road</li>
+              <li class="list-item">Clear Water Bay, Kowloon</li>
+              <li class="list-item">HONG KONG</li>
+              <li class="list-item"><i class="fa-solid fa-phone"></i>: +852 1234 5678</li>
+              <li class="list-item"><i class="fa-sharp fa-solid fa-fax"></i>: +852 8765 4321</li>
+              <li class="list-item"><i class="fa-sharp fa-solid fa-envelope"></i> : confusion@food.net</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-3 footer-column">
+            <ul class="footer-list-items social-icons mt-4">
+              <li class="list-item"><i class="fa-brands fa-google-plus-g"></i></li>
+              <li class="list-item"><i class="fa-brands fa-facebook-f"></i></li>
+              <li class="list-item"><i class="fa-brands fa-linkedin-in"></i></li>
+              <li class="list-item"><i class="fa-brands fa-twitter"></i></li>
+              <li class="list-item"><i class="fa-brands fa-youtube"></i></li>
+              <li class="list-item"><i class="fa-solid fa-envelope-dot"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row text-center mt-3 mb-3">
+          <p>© Copyright 2015 Ristorante Con Fusion</p>
+        </div>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
