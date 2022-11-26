@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f9;
+}
+
+.header-container {
+  background: blueviolet;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.reserve-btn {
+  background: orange;
+  color: #fff;
+  padding: 12px 82px;
+  font-size: 24px;
+}
+
+.about-us,
+.our-history {
+  border-bottom: 0.3px solid lightgray;
+}
+
+.small-text {
+  font-size: 16px;
+}
+/* to do */
+.ourhistory-description {
+  font-size: 20px;
+}
+
+.description {
+  display: none;
+}
+
+.h3-title {
+ font-size: 28px;
+ font-weight: 500;
+}
+
+.uthappizza-row {
+ display: flex;
+ margin-top: 24px;
+ flex-direction: row;
+}
+
+.uhta-container {
+ width: 50%;
+}
+
+.uthappizza-inner-column p,
+.buffet-inner-column p {
+ display: none;
+}
+
+.row-food-container {
+  background: #fff;
+  border: 0.3px solid #f7f7f9;
+  border-radius: 8px;
+  padding: 24px 8px;
+  display: flex;
+}
+
+.buffet-img-container {
+  width: 50%;
+}
+.row-inner-food-container {
+  display: flex;
+  margin-top: 24px;
+}
+
+.h3-row-food-container,
+.alberto-somayya-title {
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+.alberto-somayya-container {
+  display: flex;
+  margin-top: 32px;
+}
+
+.title-button {
+ display: block;
+ gap: 12px;
+}
+.reserv-btn {
+  width: 160px;
+  font-size: 24px;
+}
+.hot {
+ padding: 0;
+ margin-top: 12px;
+ width: 100px;
+ background: rgb(241, 6, 6);
+ color: #fff;
+ font-family: "Poppins", sans-serif;
+ border-radius: 8px;
+ height: 40px;
+ border: none;
+ font-size: 24px;
+}
+
+.price {
+ margin-top: 12px;
+ padding: 0;
+ width: 80px;
+ background: rgb(131, 126, 126);
+ color: #fff;
+ font-family: "Poppins", sans-serif;
+ border-radius: 25px;
+ height: 40px;
+ border: none;
+ font-size: 24px;
+}
+
+.custom-card-header {
+ background: orange;
+ font-family: "Poppins", sans-serif;
+ font-size: 20px;
+}
+
+.footer-container {
+  background: #b8afbd;
+}
+
+.footer-list-items {
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.footer-list-items li {
+  color: #161d22;
+  margin-top: 5px;
+}
+
+.footer-list-items li a {
+  text-decoration: none;
+}
+
+.footer-list-items.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-list-items.social-icons li {
+  font-size: 18px;
+  color: #2e86c1;
+}
+
+@media (max-width: 768px) {
+  .uthappizza-inner-column {
+    width: 50%;
+   }
+
+   .reserve-btn-container {
+    margin-top: 24px;
+   }
+
+   .row-food-container:first-child,
+   .row-food-container:last-child  {
+    flex-direction: column-reverse;
+  }
+  .buffet-inner-column {
+    width: 50%;
+  }
+  .alberto-somayya-inner-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ourhistory-description {
+    font-size: 16px;
+  }
+
+  .description {
+    display: block;
+  }
+
+  .uthappizza-inner-column p,
+  .buffet-inner-column p {
+   display: block;
+  }
+
+  .row-food-container {
+   display: flex;
+   flex-direction: row;
+  }
+
+  .title-button {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+ }
+ 
+ .uhta-container{
+  width: auto;
+ }
+
+ .uthappizza-row {
+  display: flex;
+  margin-top: 24px;
+ }
+
+ .buffet-img-container {
+  width: auto;
+}
+}
